@@ -1,4 +1,4 @@
-const textToDisplay = "Mama, Happy 60th Birthday! I'm sorry the whole family can't be there in person with you in Cabo, but I hope this website makes up for it. I hope you enjoy this present! And your time in Cabo with Baba. Let this website be a celebration of our entire family's appreciation for you, and one day when you look back on this, you are SHIAWASE. \n\n\n With love - Jerrick"; // Edit the text as needed
+const textToDisplay = "Chani, Happy 21st Birthday! You're finally 21 and you can drink legally now HAHHAHA. No Jack Daniels or Tequila though :p. I thought really hard what I wanted to give to you for your 21st birthday and I wanted something that can last forever, something that reminds you that you are heard and love, something that makes you smile when you are at your lowest, which is why I created this website for you! Watching you grow and blossom into the amazing person you are has been one of the greatest joys of my life. I am so incredibly grateful to have met you, and I am truly extremely lucky to be able to love you and have you love me. I sincerely hope you have a lovely birthday, and I am sending you all my happiness. You will always have a special place in my heart Subby and I hope this gift makes you smile. Happy 21st Birthday, Chani \n\n\n With love - Jerrick"; // Edit the text as needed
 const buttonElement = document.createElement("button");
 buttonElement.textContent = "Click here!";
 buttonElement.onclick = function() {
@@ -13,7 +13,7 @@ function generateText() {
         if (index < textToDisplay.length) {
             displayElement.innerHTML += textToDisplay.charAt(index);
             index++;
-            setTimeout(displayNextCharacter, 100); // Adjust the delay (in milliseconds) to control the speed
+            setTimeout(displayNextCharacter, 1); // Adjust the delay (in milliseconds) to control the speed
         } else {
             // Text display finished, show the button at the bottom
             const bottomButtonContainer = document.getElementById("bottom-button-container");
