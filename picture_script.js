@@ -38,7 +38,7 @@ function generateImageGallery(imageFolder) {
     // List of image filenames in the local folder
     const imageFiles = [
         "0.jpg",
-        // "1.jpg",
+        "1.jpg",
         "2.jpg",
         "3.jpg",
         "4.jpg",
@@ -63,6 +63,10 @@ function generateImageGallery(imageFolder) {
         "23.jpg",
         "24.jpg",
         "25.jpg",
+        "26.jpg",
+        "27.jpg",
+        "28.jpg",
+        "29.jpg",
         // Add more image filenames as needed
     ];
 

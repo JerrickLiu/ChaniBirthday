@@ -19,9 +19,22 @@
     <div id="bottom-button-container"></div>
 
     <audio id="myAudio">
-        <source src="song.mp3" type="audio/mp3">
+        <source src="little_things.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
+
+    <script>
+        document.getElementById('bottom-button-container').addEventListener('click', function() {
+            const audio = document.getElementById('myAudio');
+            const currentTime = audio.currentTime;
+            const isPlaying = !audio.paused;
+
+            localStorage.setItem('audioCurrentTime', currentTime);
+            localStorage.setItem('audioIsPlaying', isPlaying);
+
+            window.location.href = 'pictures_page.html';
+        });
+    </script>
 
     <script>
         document.addEventListener('click', function () {

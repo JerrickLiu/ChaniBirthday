@@ -21,9 +21,24 @@
     </div>
 
     <audio id="picture_audio" autoplay style="position: absolute; width: 1px; height: 1px; overflow: hidden;">
-        <source src="kioro.mp3" type="audio/mp3">
+        <source src="little_things.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
     </audio>
+
+    <script>
+        window.addEventListener('load', function() {
+            const audio = document.getElementById('picture_audio');
+            const currentTime = localStorage.getItem('audioCurrentTime');
+            const isPlaying = localStorage.getItem('audioIsPlaying') === 'true';
+
+            if (currentTime) {
+                audio.currentTime = parseFloat(currentTime);
+            }
+            if (isPlaying) {
+                audio.play();
+            }
+        });
+    </script>
 
     <script src="picture_script.js"></script>
 </body>
