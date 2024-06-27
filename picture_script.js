@@ -8,7 +8,7 @@ buttonElement.onclick = function() {
     // Pause all audio elements on the page
     const audioElements = document.querySelectorAll('audio');
     audioElements.forEach(audio => audio.pause());
-    window.open("https://www.youtube.com/watch?v=0GvPQWjFICc", "_blank");
+    window.open("https://youtu.be/vzrg34vJ26k", "_blank");
 };
 
 let currentImageIndex = 0; // Keep track of the current image index
