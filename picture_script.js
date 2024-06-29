@@ -22,7 +22,7 @@ function generateText() {
         if (index < textToDisplay.length) {
             displayElement.innerHTML += textToDisplay.charAt(index);
             index++;
-            setTimeout(displayNextCharacter, 1); // Adjust the delay (in milliseconds) to control the speed
+            setTimeout(displayNextCharacter, 100); // Adjust the delay (in milliseconds) to control the speed
         } else {
             // Text display finished, show the button at the bottom
             const bottomButtonContainer = document.getElementById("bottom-button-container");
