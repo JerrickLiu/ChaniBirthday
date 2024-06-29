@@ -37,6 +37,17 @@
             if (isPlaying) {
                 audio.play();
             }
+            // Replay the song when it finishes
+            audio.addEventListener('ended', function() {
+                audio.currentTime = 0;
+                audio.play();
+            });
+
+            // Save the audio state on unload
+            window.addEventListener('beforeunload', function() {
+                localStorage.setItem('audioCurrentTime', audio.currentTime);
+                localStorage.setItem('audioIsPlaying', !audio.paused);
+            });
         });
     </script>
 
